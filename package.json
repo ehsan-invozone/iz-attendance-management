@@ -1,0 +1,24 @@
+{
+  "name": "iz-attendance-management",
+  "version": "1.0.0",
+  "description": "Attendance Management System for InvoZone employees",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehsan-invozone/iz-attendance-management.git"
+  },
+  "keywords": [
+    "invozone",
+    "attendance",
+    "management"
+  ],
+  "author": "Ehsan Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehsan-invozone/iz-attendance-management/issues"
+  },
+  "homepage": "https://github.com/ehsan-invozone/iz-attendance-management#readme"
+}
