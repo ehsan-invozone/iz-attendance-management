@@ -5,13 +5,22 @@
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
+    "update:doc": "apidoc -i src/routes -o docs/",
     "prettier:check": "prettier --config .prettierrc --check \"src/**/*.{ts,css,html}\""
-    },
-    "husky": {
-      "hooks": {
-          "pre-commit": "npm run prettier:check"
-      }
-    },
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint . --fix", "git add"
+    ],
+    "src/**/*.scss": [
+      "stylelint --syntax scss --fix", "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ehsan-invozone/iz-attendance-management.git"
